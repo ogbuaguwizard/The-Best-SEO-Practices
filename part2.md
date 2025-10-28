@@ -71,68 +71,57 @@ Monitor the Status: It will show "Success" once processed. "Success" does not me
 
 **Step 3**: Inspect and Request Indexing for Key URLs
 The URL Inspection Tool is your most powerful weapon in GSC.
-
-Navigate to "URL Inspection" in the left menu.
-
-Paste the URL of your most important page (e.g., your homepage or a flagship product page).
-
+```markdown
+- Navigate to "URL Inspection" in the left menu.
+- Paste the URL of your most important page (e.g., your homepage or a flagship product page).
+```
 The tool will show its current indexing status.
 
 If the page is not indexed, or if you've just made a change, click "Request Indexing." This pushes the URL into Google's priority crawling queue. Use this sparingly for your most critical pages.
 
-⚙️ Step-by-Step Implementation for Bing Webmaster Tools:
+**⚙️ Step-by-Step Implementation for Bing Webmaster Tools**:
 
 Do not neglect Bing. It powers a significant portion of desktop search and is the backbone for other search engines like DuckDuckGo.
-
-Go to Bing Webmaster Tools.
-
-Sign in and "Add a site."
-
-Verify ownership (similar process to GSC, often via DNS or XML file).
-
-Once verified, go to "Sitemaps" and submit your sitemap.xml.
-
+```markdown
+- Go to Bing Webmaster Tools.
+- Sign in and "Add a site."
+- Verify ownership (similar process to GSC, often via DNS or XML file).
+- Once verified, go to "Sitemaps" and submit your sitemap.xml.
+```
 Bing's interface provides similar tools for URL inspection and crawl stats.
 
-Chapter 6: Post-Launch Performance Baseline
+## Chapter 6: Post-Launch Performance Baseline
 The first 72 hours after launch are a critical observation period.
 
-⚙️ Step-by-Step Implementation:
+**⚙️ Step-by-Step Implementation**:
 
-Step 1: Establish Performance Benchmarks
+**Step 1**: Establish Performance Benchmarks
 
 Re-run Google PageSpeed Insights and GTmetrix on your live site. Record the scores and core metrics (Largest Contentful Paint, Cumulative Layout Shift, etc.). This is your "Day 1" benchmark for future comparisons.
 
-Step 2: Monitor Google Search Console Daily
+**Step 2**: Monitor Google Search Console Daily
 Check these reports for the first week:
+- Coverage Report (Core): This is your most important report. You are looking for errors.
+- Expected: A steady increase in "Valid" URLs. You may see "Crawled - currently not indexed," which is normal as Google processes your site.
+- Red Flag: A sudden spike in "Error" or "Excluded" URLs. Investigate immediately.
+- Performance Report: It will have no data initially, but start familiarizing yourself with the interface. This will soon show your first impressions and clicks from Google Search.
+- Core Web Vitals Report: Check if your pages are classified as "Good," "Needs Improvement," or "Poor." Aim for all "Good."
 
-Coverage Report (Core): This is your most important report. You are looking for errors.
-
-Expected: A steady increase in "Valid" URLs. You may see "Crawled - currently not indexed," which is normal as Google processes your site.
-
-Red Flag: A sudden spike in "Error" or "Excluded" URLs. Investigate immediately.
-
-Performance Report: It will have no data initially, but start familiarizing yourself with the interface. This will soon show your first impressions and clicks from Google Search.
-
-Core Web Vitals Report: Check if your pages are classified as "Good," "Needs Improvement," or "Poor." Aim for all "Good."
-
-Step 3: Set Up Google Analytics 4
+**Step 3**: Set Up Google Analytics 4
 If you haven't already, install GA4. It's essential for understanding user behavior.
+```markdown
+- Create a GA4 property.
+- Install the tracking code via Google Tag Manager or directly in the `<head>` of your site.
+- Set up basic goals, like "Contact Form Submissions" or "Purchases."
+```
 
-Create a GA4 property.
+**Step 4**: Implement 404 & Server Error Monitoring
 
-Install the tracking code via Google Tag Manager or directly in the <head> of your site.
-
-Set up basic goals, like "Contact Form Submissions" or "Purchases."
-
-Step 4: Implement 404 & Server Error Monitoring
-
-Set up Google Search Console Alerts: GSC can email you when it detects a significant increase in 404 errors or other crawl issues.
-
-Server Monitoring: Use a service like UptimeRobot to get instant alerts if your site goes down (returns a 5xx error). Downtime directly hurts crawlability and rankings.
+- Set up Google Search Console Alerts: GSC can email you when it detects a significant increase in 404 errors or other crawl issues.
+- Server Monitoring: Use a service like UptimeRobot to get instant alerts if your site goes down (returns a 5xx error). Downtime directly hurts crawlability and rankings.
 
 By meticulously following this deployment checklist, you transition from a closed development environment to a live, public-facing website with confidence. You have the tools and baselines in place to monitor its health and performance.
 
 The work is not over; it has simply changed focus. Now we move from building and launching to growing and sustaining.
 
-Shall we proceed to Part 3: Post-Deployment Growth & Maintenance, where we will dive deep into internal linking, advanced speed optimization, structured data, and the continuous improvement cycle?
+ We shallproceed to [Part 3](https://github.com/ogbuaguwizard/The-Best-SEO-Practices/blob/main/part3.md): Post-Deployment Growth & Maintenance, where we will dive deep into internal linking, advanced speed optimization, structured data, and the continuous improvement cycle.
