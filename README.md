@@ -237,30 +237,30 @@ Sitemap: https://yourdomain.com/sitemap.xml
   - Tools: Use online generators like xml-sitemaps.com.
   - Build Tools: Use plugins for your static site generator (e.g., gatsby-plugin-sitemap for Gatsby, jekyll-sitemap for Jekyll).
   - Custom Scripts: Write a script that generates sitemap.xml by iterating through your site's pages.
-  - ```powershell
-    choco install wget
-    ```
-    ```bash
-    wget --spider --recursive --no-verbose --output-file=wgetlog.txt https://yourdomain.com
-    ```
-    ```bash
-    grep -o "https://yourdomain.com[^ ]*" wgetlog.txt | sort -u > urllist.txt
-    ```
-    ```bash
-    echo '<?xml version="1.0" encoding="UTF-8"?>' > sitemap.xml
-    echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' >> sitemap.xml
-    while read url; do
-      echo "  <url><loc>$url</loc></url>" >> sitemap.xml
-    done < urllist.txt
-    echo '</urlset>' >> sitemap.xml
-    ```
+   - ```powershell
+     choco install wget
+     ```
+     ```bash
+     wget --spider --recursive --no-verbose --output-file=wgetlog.txt https://yourdomain.com
+     ```
+     ```bash
+     grep -o "https://yourdomain.com[^ ]*" wgetlog.txt | sort -u > urllist.txt
+     ```
+     ```bash
+     echo '<?xml version="1.0" encoding="UTF-8"?>' > sitemap.xml
+     echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' >> sitemap.xml
+     while read url; do
+       echo "  <url><loc>$url</loc></url>" >> sitemap.xml
+     done < urllist.txt
+     echo '</urlset>' >> sitemap.xml
+     ```
     
-Step 2: Structure Your Sitemap
+**Step 2**: Structure Your Sitemap
 This is a list of your most important URLs.
 
-Example sitemap.xml:
+**Example sitemap.xml**:
 
-xml
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
@@ -282,16 +282,16 @@ xml
     <priority>0.9</priority>
   </url>
 </urlset>
-<lastmod>: The date the content was last modified (use YYYY-MM-DD).
+```
 
-<changefreq>: A hint (e.g., always, hourly, daily, weekly, monthly, yearly, never).
+`<lastmod>`: The date the content was last modified (use YYYY-MM-DD).
 
-<priority>: A hint about priority relative to other URLs (0.0 to 1.0).
+`<changefreq>`: A hint (e.g., always, hourly, daily, weekly, monthly, yearly, never).
 
-Step 3: Submit Your Sitemap
+`<priority>`: A hint about priority relative to other URLs (0.0 to 1.0).
 
-Location: Upload it to your site's root (e.g., https://yourdomain.com/sitemap.xml).
+**Step 3**: Submit Your Sitemap
 
-Reference it in robots.txt: As shown above.
-
-Submit to Google Search Console: This is a deployment phase action, which we will cover in Part 2.
+- Location: Upload it to your site's root (e.g., https://yourdomain.com/sitemap.xml).
+- Reference it in robots.txt: As shown above.
+- Submit to Google Search Console: This is a deployment phase action, which we will cover in Part 2.
