@@ -111,7 +111,7 @@ Check these reports for the first week:
 If you haven't already, install GA4. It's essential for understanding user behavior.
 ```markdown
 - Create a GA4 property.
-- Install the tracking code via Google Tag Manager or directly in the `<head>` of your site.
+- Install the tracking code via Google Tag Manager or directly in the <head> of your site.
 - Set up basic goals, like "Contact Form Submissions" or "Purchases."
 ```
 
