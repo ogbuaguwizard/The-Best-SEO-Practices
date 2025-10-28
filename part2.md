@@ -55,18 +55,18 @@ Your site is live, clean, and fast. Now, we need to formally introduce it to the
 **Step 1**: Verify Site Ownership
 You must prove you own the website. The "DNS record" method is the most robust.
 ```markdown
-Go to Google Search Console.
-Click "Add Property" and select "URL prefix" (recommended for its flexibility).
-Enter your full website URL (e.g., https://yourdomain.com).
-Choose a verification method:
+- Go to Google Search Console.
+- Click "Add Property" and select "URL prefix" (recommended for its flexibility).
+- Enter your full website URL (e.g., https://yourdomain.com).
+- Choose a verification method:
 ```
 
 **Step 2**: Submit Your Sitemap
 ```markdown
-Once verified, navigate to "Sitemaps" in the left-hand menu.
-In the input field at the top, enter the path to your sitemap (e.g., sitemap.xml).
-Click "Submit."
-Monitor the Status: It will show "Success" once processed. "Success" does not mean all URLs are indexed, only that the sitemap was read without errors. It may show "Discovered - currently not indexed" for many URLs, which is normal initially.
+- Once verified, navigate to "Sitemaps" in the left-hand menu.
+- In the input field at the top, enter the path to your sitemap (e.g., sitemap.xml).
+- Click "Submit."
+- Monitor the Status: It will show "Success" once processed. "Success" does not mean all URLs are indexed, only that the sitemap was read without errors. It may show "Discovered - currently not indexed" for many URLs, which is normal initially.
 ```
 
 **Step 3**: Inspect and Request Indexing for Key URLs
