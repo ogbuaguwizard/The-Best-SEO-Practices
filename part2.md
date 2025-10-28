@@ -12,9 +12,11 @@ Use a dedicated crawler to see your site through the eyes of Googlebot.
 **Recommended Tool**: Screaming Frog SEO Spider. The free version (up to 500 URLs) is sufficient for many small-to-medium sites.
 
 **What to Configure**:
+```markdown
 - Set the crawl mode to "Spider" for a live website crawl (or "List" mode if you have a pre-generated list of URLs).
 - In "Configuration > Spider," ensure you are crawling all necessary resources (HTML, CSS, JS, images).
 - Run the Crawl: Enter your staging or live URL and let the tool map your entire site.
+```
 
 **Step 2**: Analyze the Crawl Results for Critical Errors
 **Focus on these tabs in Screaming Frog**:
@@ -27,10 +29,11 @@ Use a dedicated crawler to see your site through the eyes of Googlebot.
 **Step 3**: Validate Your robots.txt File
 
 Use the Google robots.txt Tester: This is available in Google Search Console. Even before verification, you can test a live URL.
+```markdown
 - Paste the contents of your robots.txt into the tester.
 - Test key URLs (homepage, important product pages) to ensure they are "Allowed."
 - Test URLs you want to block (e.g., /admin/) to ensure they are "Disallowed."
-
+```
 ⚠ CRITICAL CHECK: Test URLs that load CSS and JavaScript files. They must be allowed. If they are blocked, Google cannot see your styled, interactive site, which devastates your rankings.
 
 **Step 4**: Performance & Mobile-Friendly Baseline
