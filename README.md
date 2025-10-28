@@ -260,4 +260,4 @@ This is a list of your most important URLs.
 **Step 3**: Submit Your Sitemap
 - Location: Upload it to your site's root (e.g., https://yourdomain.com/sitemap.xml).
 - Reference it in robots.txt: As shown above.
-- Submit to Google Search Console: This is a deployment phase action, which we will cover in Part 2.
+- Submit to Google Search Console: This is a deployment phase action, which we will cover in (Part 2)[https://github.com/ogbuaguwizard/The-Best-SEO-Practices/main/part2.md].
