@@ -39,24 +39,18 @@ Headings are the table of contents for your page. Never use headings for styling
 **Rule**: There should only be one `<h1>` per page, representing the primary topic.
 
   **Structure**:
-  
   - `H1`: Main Title of the Page/Post
-  
   - `H2`: Major Section Headings
-  
   - `H3`: Sub-sections under an H2
-  
   ...and so on.
 
 **Bad Example**:
-
 ```html
 <h1>Best SEO Practices</h1>
 <h3>What is Semantic HTML?</h3> <!-- Skipped H2! -->
 <h2>How to Implement</h2> <!-- Out of order! -->
 ```
 **Good Example**:
-
 ```html
 <article>
   <header>
@@ -107,36 +101,25 @@ Metadata is the concise summary you provide to search engines about each page. I
 This is the most important on-page SEO element. It appears as the clickable headline in Search Engine Results Pages (SERPs).
 
 **Best Practices**:
-
 - Length: 50-60 characters. Avoid truncation.
-
 - Placement: Put your primary keyword first, followed by your brand.
-
 - Uniqueness: Every page must have a unique title.
-
 - Readability: Make it compelling for users, not just bots.
 
 **Examples**:
-
 - Homepage: Best SEO Practices | Architect's Guide
-
 - Product Page: Organic Cotton T-Shirt | Sustainable Apparel Co.
-
 - Blog Post: How to Implement Semantic HTML: A Step-by-Step Guide
 
 **Step 2**: The `<meta name="description">` Tag
 This is your ad copy. It doesn't directly impact ranking algorithms, but it heavily influences Click-Through Rate (CTR).
 
 **Best Practices**:
-
 - Length: 150-160 characters.
-
 - Content: Write a compelling, human-readable summary that includes your primary keyword and a call to action.
-
 - Uniqueness: Like the title, every description should be unique.
 
 **Example**:
-
 ```html
 <meta name="description" content="Master modern SEO from the ground up. Our guide starts with code structure and metadata to build unshakeable, ranking-friendly foundations for your website.">
 ```
@@ -145,7 +128,6 @@ This is your ad copy. It doesn't directly impact ranking algorithms, but it heav
 Non-negotiable. This tells mobile browsers how to control the page's dimensions and scaling.
 
 **Implementation**:
-
 ``` html
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 ```
@@ -154,7 +136,6 @@ Non-negotiable. This tells mobile browsers how to control the page's dimensions 
 These control how your content appears when shared on social media platforms like Facebook, LinkedIn, and Twitter. This is crucial for visibility and click-throughs from social channels.
 
 Basic OG Implementation:
-
 ```html
 <meta property="og:title" content="The Architect's Guide to Modern SEO">
 <meta property="og:description" content="Master modern SEO from the ground up. Build rank from the code.">
@@ -163,7 +144,6 @@ Basic OG Implementation:
 <meta property="og:type" content="article">
 ```
 Twitter Card Implementation:
-
 ```html
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="The Architect's Guide to Modern SEO">
@@ -175,17 +155,12 @@ Twitter Card Implementation:
 Your first line of defense against duplicate content. It tells search engines, "Among several similar pages, this is the master version."
 
 When to Use It:
-
 - URL Parameters: example.com/product?color=red and example.com/product?color=blue should both canonicalize to example.com/product.
-
 - HTTP vs. HTTPS: Ensure the HTTPS version is canonical.
-
 - WWW vs. non-WWW: Choose one as your preferred version.
-
 - Printer-friendly pages: Should canonicalize back to the main article.
 
 **Implementation (place in `<head>`)**:
-
 ```html
 <link rel="canonical" href="https://example.com/canonical-url-of-this-page" />
 ```
@@ -199,19 +174,14 @@ Before a search engine can rank your content, it must be able to find and crawl 
 Create a plain text file named robots.txt and place it in your website's root directory (e.g., https://yourdomain.com/robots.txt).
 
 **Step 2**: Define the Rules
-
 - User-agent: * specifies the rules apply to all crawlers.
-
 - Disallow: tells crawlers which directories or pages to avoid.
-
 - Allow: can be used to grant access to a subdirectory within a disallowed path.
-
 - Sitemap: points to the location of your XML sitemap.
 
 **Step 3**: Craft a Smart robots.txt
 
 **Good Example (Secure & Permissive)**:
-
 ```txt
 User-agent: *
 Disallow: /admin/
@@ -230,9 +200,7 @@ Sitemap: https://yourdomain.com/sitemap.xml
 **⚙️ Step-by-Step Implementation for XML Sitemap**:
 
 **Step 1**: Generate the Sitemap
-
 - For WordPress: Plugins like Yoast SEO, RankMath, or All in One SEO generate this automatically.
-
 - For Static Sites/Custom Builds:
   - Tools: Use online generators like xml-sitemaps.com.
   - Build Tools: Use plugins for your static site generator (e.g., gatsby-plugin-sitemap for Gatsby, jekyll-sitemap for Jekyll).
@@ -259,7 +227,6 @@ Sitemap: https://yourdomain.com/sitemap.xml
 This is a list of your most important URLs.
 
 **Example sitemap.xml**:
-
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -291,7 +258,6 @@ This is a list of your most important URLs.
 `<priority>`: A hint about priority relative to other URLs (0.0 to 1.0).
 
 **Step 3**: Submit Your Sitemap
-
 - Location: Upload it to your site's root (e.g., https://yourdomain.com/sitemap.xml).
 - Reference it in robots.txt: As shown above.
 - Submit to Google Search Console: This is a deployment phase action, which we will cover in Part 2.
