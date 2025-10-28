@@ -124,4 +124,4 @@ By meticulously following this deployment checklist, you transition from a close
 
 The work is not over; it has simply changed focus. Now we move from building and launching to growing and sustaining.
 
- We shallproceed to [Part 3](https://github.com/ogbuaguwizard/The-Best-SEO-Practices/blob/main/part3.md): Post-Deployment Growth & Maintenance, where we will dive deep into internal linking, advanced speed optimization, structured data, and the continuous improvement cycle.
+ We shall proceed to [Part 3](https://github.com/ogbuaguwizard/The-Best-SEO-Practices/blob/main/part3.md): Post-Deployment Growth & Maintenance, where we will dive deep into internal linking, advanced speed optimization, structured data, and the continuous improvement cycle.
